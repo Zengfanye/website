@@ -656,7 +656,7 @@ The Kubernetes API verifies that the required keys are set for a Secret of this 
 -->
 提供 SSH 身份认证类型的 Secret 仅仅是出于方便性考虑。
 你可以使用 `Opaque` 类型来保存用于 SSH 身份认证的凭据。
-不过，使用预定义的、公开的 Secret 类型（`kubernetes.io/tls`）
+不过，使用预定义的、公开的 Secret 类型（`kubernetes.io/ssh-auth`）
 有助于其他人理解你的 Secret 的用途，也可以就其中包含的主键名形成约定。
 Kubernetes API 会验证这种类型的 Secret 中是否设定了所需的主键。
 
